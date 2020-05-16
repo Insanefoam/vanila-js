@@ -32,6 +32,7 @@ for(let el of arr)
 set.add(1)
 console.log(set)
 
+//Find arr of unique values via Set
 function unique(arr) {
     let set = new Set();
 
