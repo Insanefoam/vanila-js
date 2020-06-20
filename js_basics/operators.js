@@ -18,3 +18,13 @@ console.log(d);
 console.log(2 ** 10); // 1024
 console.log(4 ** (1/2)) // 2
 
+//On '<' and '>' operators operands cast to Number
+console.log('0' > 1) // false
+//Or if both operands are String, then they compare lehigraphical
+console.log('a' > 'b') // false
+
+console.log('' == false) // true
+//When strong '===' then JS doesnt cast operands
+console.log('' === false) //false
+
+console.log(1 || '') // 1
