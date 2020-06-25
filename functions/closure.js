@@ -23,20 +23,20 @@ function sayHi() {
 name = 'Egor';
 // Hi Egor
 //Because when functions is called he search 'name' variable in his Lexical Enviroment
-//Don't find it, and starts search in outter Lexical Enviroment, when name = 'Egor'
+//Don't find it, and starts search in outter Lexical Enviroment, where name = 'Egor'
 sayHi();
 
 //IIFE
 (function IIFE() {
     let name = 'John'
     console.log(name)
-})()
+})();
 
 function inBetween(a, b) {
     return function (c) {
         return c >= a && c <= b
     }
-}
+};
 
-const arr = [1, 2, 3, 4, 5, 6, 7, 8]
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
 console.log(arr.filter(inBetween(2, 7)));
